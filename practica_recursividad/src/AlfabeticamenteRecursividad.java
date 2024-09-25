@@ -1,7 +1,7 @@
 public class AlfabeticamenteRecursividad {
     public static void main(String[] args) {
 
-        String word = "ABCDFE";
+        String word = "ABCDEF";
 
         boolean resultado = alfabeticamenteRecursivo(word);
 
@@ -10,15 +10,16 @@ public class AlfabeticamenteRecursividad {
     }
 
     public static boolean alfabeticamenteRecursivo(String word) {
-        String word;
 
-        if ((name.charAt(0) < name.charAt(1 + 1))) {
-            int n = n + 1
-
-        } else {
-            System.out.println("No esta organizado");
+        if(word.length() <= 1){
+            return true; //Caso base
         }
-        return true;
+
+        if ((word.charAt(0) > word.charAt(1))) {
+        return false;
+        } else {
+            return alfabeticamenteRecursivo(word.substring(1));
+        }
     }
         }
 
